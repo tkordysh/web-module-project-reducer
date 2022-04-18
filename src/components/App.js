@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <nav className="navbar navbar-dark bg-dark">
-        <a className="navbar-brand" href="#"> Reducer Challenge</a>
+        <a className="navbar-brand" href="#">TK Reducer Challenge</a>
       </nav>
 
       <div className = "container row mt-5">
