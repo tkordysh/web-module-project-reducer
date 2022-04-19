@@ -2,7 +2,7 @@ import React, { useReducer } from 'react';
 import reducer from '../reducers';
 import { initialState } from '../reducers';
 import './App.css';
-import { addOne, applyNumber } from '../actions';
+import { addOne, applyNumber, changeOperation } from '../actions';
 import TotalDisplay from './TotalDisplay';
 import CalcButton from './CalcButton';
 
@@ -54,9 +54,9 @@ function App() {
             </div>
 
             <div className="row">
-              <CalcButton value={"+"}/>
-              <CalcButton value={"*"}/>
-              <CalcButton value={"-"}/>
+              <CalcButton value={"+"} onClick={() => dispatch(changeOperation("+"))}/>
+              <CalcButton value={"*"} onClick={() => dispatch(changeOperation("*"))}/> 
+              <CalcButton value={"-"} onClick={() => dispatch(changeOperation("-"))}/>
             </div>
 
             <div className="row ce_button">
